@@ -1,17 +1,647 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title="CV - Urip Yoga Pangestu"
+  description="Personal CV of Urip Yoga Pangestu"
+>
+  <div id="main" class="relative">
+    <div class="container mx-auto">
+      <div class="border-b border-black py-8 lg:py-16">
+        <div class="container flex items-start gap-4">
+          <img
+            src="/me.png"
+            class="w-28 h-24 md:hidden"
+            alt="Urip Yoga Pangestu"
+          />
+          <h1
+            class="pt-3 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
+          >
+            Urip Yoga Pangestu.
+          </h1>
+        </div>
+        <div class="pt-6 border-b border-black pb-6">
+          <ul>
+            <a
+              href="https://www.linkedin.com/in/urip-yoga-pangestu-65a541231/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li>
+                <span class="font-bold">linkedin</span> : Urip Yoga Pangestu
+              </li>
+            </a>
+            <a href="mailto:2211103102@ittelkom-pwt.ac.id">
+              <li>
+                <span class="font-bold">email</span> : 2211103102@ittelkom-pwt.ac.id
+              </li>
+            </a>
+            <a
+              href="https://wa.me/6285861466287"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <li><span class="font-bold">telp</span> : (+62) 858-6146-6287</li>
+            </a>
+            <a href="https://github.com/timurlauttt">
+              <li><span class="font-bold">github</span> : timurlauttt</li>
+            </a>
+            <a href="https://my-portofolio-guwa.vercel.app/">
+              <li>
+                <span class="font-bold">portfolio</span> : my-portofolio-guwa.vercel.app
+              </li>
+            </a>
+          </ul>
+        </div>
+        <div class="pt-6">
+          <h2 class="font-body text-2xl font-semibold text-primary">SUMMARY</h2>
+          <p
+            class="pt-8 font-body text-base lg:text-xl font-light text-primary text-justify"
+          >
+            Undergraduate Information Systems student at Telkom University
+            Purwokerto with a strong interest in Web and Fullstack Development.
+            Experienced in building web applications using Laravel, Django,
+            React, and and basic knowledge of deployment in Cpanel. Passionate
+            about developing scalable, user-friendly systems and continuously
+            improving technical and problem-solving skills through real-world
+            projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="border-b border-black py-8 lg:py-16">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            EDUCATION
+          </h3>
+        </div>
+        <div class="space-y-8">
+          <!-- Telkom University -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Telkom University Purwokerto
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September 2022 - Present
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg text-primary">
+              Bachelor of Information Systems
+            </p>
+            <ul class="pt-2 list-disc pl-5">
+              <li class="font-body font-light text-primary">
+                Information Systems student with a provisional GPA of 3.76/4.00.
+              </li>
+            </ul>
+          </div>
+
+          <!-- SMA Negeri 1 Sokaraja -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                SMA Negeri 1 Sokaraja
+              </h4>
+              <span class="font-body text-lg text-primary">
+                July 2018 - May 2021
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg text-primary">
+              Concentration of majors in Mathematics and Natural Sciences
+            </p>
+            <ul class="pt-2 list-disc pl-5">
+              <li class="font-body font-light text-primary">
+                Graduated with an average School Examination score of
+                85.67/100.00.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-black py-8 lg:py-16">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            TECHNICAL SKILLS
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Operating Systems -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Operating Systems
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">Windows</li>
+              <li class="font-body font-light text-primary">
+                Linux (familiar with Ubuntu, Fedora Workstation, Fedora KDE
+                Plasma)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Database -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Database
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">MySQL</li>
+              <li class="font-body font-light text-primary">SqLite</li>
+            </ul>
+          </div>
+
+          <!-- Programming & Frameworks -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Programming & Frameworks
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">
+                PHP (Laravel, CodeIgniter, PHP Native)
+              </li>
+              <li class="font-body font-light text-primary">Python (Django)</li>
+              <li class="font-body font-light text-primary">
+                JavaScript (React, basic frontend logic)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Version Control -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Version Control
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">Git</li>
+              <li class="font-body font-light text-primary">Github</li>
+            </ul>
+          </div>
+
+          <!-- Frontend -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Frontend
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">HTML5</li>
+              <li class="font-body font-light text-primary">CSS3</li>
+              <li class="font-body font-light text-primary">
+                JavaScript (ES6+)
+              </li>
+              <li class="font-body font-light text-primary">React.js</li>
+              <li class="font-body font-light text-primary">Bootstrap</li>
+              <li class="font-body font-light text-primary">Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <!-- Other Tools -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Other Tools
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">
+                Figma (UI/UX & prototyping)
+              </li>
+              <li class="font-body font-light text-primary">
+                Cpanel(Basic Website Deployment)
+              </li>
+              <li class="font-body font-light text-primary">
+                Vercel(for temporary testing)
+              </li>
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary pb-3">
+              Backend
+            </h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li class="font-body font-light text-primary">PHP</li>
+              <li class="font-body font-light text-primary">Laravel</li>
+              <li class="font-body font-light text-primary">Python</li>
+              <li class="font-body font-light text-primary">CodeIgniter</li>
+              <li class="font-body font-light text-primary">Django</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-black py-8 lg:py-16 text-justify">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            PROJECTS & PORTFOLIO
+          </h3>
+        </div>
+        <div class="space-y-8">
+          <!-- lowcosthost.id -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://lowcosthost.id" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  lowcosthost.id
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                January 2026 - Present
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Technical Team
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Successfully deployed a total of 15 websites
+              </li>
+              <li class="font-body font-light text-primary">
+                Performing maintenance and optimisation on each deployed website
+              </li>
+            </ul>
+          </div>
+
+          <!-- Blog Website -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://vercel.com/urip-yoga-pangestus-projects/astro-blog" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  Blog Website
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                January 2026 - Present
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Personal blog website
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developing & deploying personal blog and portfolio website
+                developed using Astro, Tailwind CSS
+              </li>
+            </ul>
+          </div>
+
+          <!-- Capstone Project -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://refloreo-iterum.jeniso.com/" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  Capstone Project - E-Catalog Application
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                September 2025 - December 2025
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Becoming the capstone project leader
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Led the 'capstone' project team as project lead, overseeing
+                planning, execution, and delivery of the e-catalog application
+                with a focus on timeline management and team coordination.
+              </li>
+              <li class="font-body font-light text-primary">
+                Designed and implemented core database architecture for MySQL,
+                ensuring scalability and scheme to ensure data integrity and an
+                optimal data structure, while also developing comprehensive CRUD
+                functionality for managing products, categories, and users
+                within the admin dashboard to streamline administrative
+                operations
+              </li>
+            </ul>
+          </div>
+
+          <!-- E-learning Web App -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://simapro-lms.up45.ac.id/" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  E-learning Web App
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                March 2025 - August 2025
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Fullstack Web Dev
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Building a learning management system website using the Laravel
+                framework, with three main roles divided into students,
+                lecturers, and admins
+              </li>
+              <li class="font-body font-light text-primary">
+                perform maintenance after development is complete
+              </li>
+            </ul>
+          </div>
+
+          <!-- SMK Taman Siswa Purwokerto -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://smktamansiswapwt.sch.id/" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  SMK Taman Siswa Purwokerto Company Profile
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                September 2025 - December 2025
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Front-end Dev
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Designed and developed the user interface for the company
+                profile website using Laravel Blade templates, creating an
+                intuitive and visually appealing frontend experience for
+                visitors
+              </li>
+              <li class="font-body font-light text-primary">
+                Ensured cross-device compatibility by implementing responsive
+                design principles, guaranteeing optimal display and
+                functionality across desktop, tablet, and mobile devices
+              </li>
+            </ul>
+          </div>
+
+          <!-- Selis Modis Hoki -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://selismolishoki.com" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  Selis Modis Hoki
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary">
+                May 2025 - August 2025
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Front-end Dev
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Designed and developed a web application using Laravel framework
+                with MySQL database, implementing modern web development
+                practices and MVC architecture.
+              </li>
+              <li class="font-body font-light text-primary">
+                Created responsive user interfaces using Laravel Blade templates
+                and integrated frontend technologies including JavaScript and
+                CSS frameworks for optimal user experience.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Portfolio Website -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <a href="https://my-portofolio-guwa.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+                  Portfolio Website
+                </h4>
+              </a>
+              <span class="font-body text-lg text-primary"> August 2025 </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Fullstack Web Dev
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Creating a portfolio website using React.js
+              </li>
+              <li class="font-body font-light text-primary">
+                Deploying on Vercel
+              </li>
+              <li class="font-body font-light text-primary">
+                Integrating Firebase for data storage/database and backend
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-black py-8 lg:py-16 text-justify">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            ORGANIZATIONAL EXPERIENCE
+          </h3>
+        </div>
+        <div class="space-y-8">
+          <!-- Himpunan Mahasiswa Sistem Informasi -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Himpunan Mahasiswa Sistem Informasi
+              </h4>
+              <span class="font-body text-lg text-primary">
+                August 2025 - December 2024
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Entrepreneur Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Successfully implemented the PDH Skirt Sales program, with total
+                sales of over 150 units
+              </li>
+              <li class="font-body font-light text-primary">
+                Assisted in the implementation of other programs such as talk
+                shows, national seminars, and goods sales, within the scope of
+                entrepreneurship.
+              </li>
+            </ul>
+          </div>
+
+          <!-- PRAKTISI DAYS -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                PRAKTISI DAYS
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September 2024
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developed the concept for the 2024 PKKMB event for the
+                Information Systems Study Program at Telkom University
+                Purwokerto.
+              </li>
+              <li class="font-body font-light text-primary">
+                Served as the MC for the 2024 PKKMB event for the Information
+                Systems Study Program at Telkom University Purwokerto.
+              </li>
+            </ul>
+          </div>
+
+          <!-- TODAYS 2024 -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                TODAYS 2024
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September 2024
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Group Support Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Became a mentor for the PKKMB group at Telkom University
+                Purwokerto and helped organize 50 new students.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Bakti Sosial Panti Asuhan -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Bakti Sosial Panti Asuhan
+              </h4>
+              <span class="font-body text-lg text-primary"> March 2024 </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developed the concept for the HMSI Telkom Institute of
+                Technology Purwokerto Community Service event at the Harapan
+                Mulya Orphanage.
+              </li>
+              <li class="font-body font-light text-primary">
+                Served as the MC for the Community Service event at the Harapan
+                Mulya Orphanage.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Closing Dies Natalis -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Closing Dies Natalis Jurusan Sistem Informasi 2023
+              </h4>
+              <span class="font-body text-lg text-primary">
+                December 2023
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developed the concept for the 2023 Information Systems
+                Anniversary event at the Telkom Institute of Technology
+                Purwokerto.
+              </li>
+              <li class="font-body font-light text-primary">
+                Served as the MC for the closing ceremony of the Information
+                Systems Department's Anniversary at the Telkom Institute of
+                Technology Purwokerto.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Malam Apresiasi Seni -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Malam Apresiasi Seni
+              </h4>
+              <span class="font-body text-lg text-primary"> October 2023 </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developed the theme and concept for the Arts Studio Night event
+                with the Student Executive Board of the Telkom Institute of
+                Technology Purwokerto
+              </li>
+              <li class="font-body font-light text-primary">
+                Developed the concept for Night's segments, the Fashion Show,
+                and served as the moderator for the segment.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Infection 4.0 -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Infection 4.0
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September 2023
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Staff
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Created the theme and concept for the faculty's PKKMB event,
+                INFECTION 4.0, with the Student Executive Board of the Faculty
+                of Informatics, Telkom Institute of Technology, Purwokerto.
+              </li>
+              <li class="font-body font-light text-primary">
+                Served as the host for the 2023 INFECTION 4.0 PKKMB event.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Care For Maba -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Care For Maba
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September 2023
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg font-medium text-primary">
+              • Event Division Coordinator
+            </p>
+            <ul class="pt-2 list-disc pl-10">
+              <li class="font-body font-light text-primary">
+                Developed the theme and concept for the PKKMB event for the
+                Information Systems study program with the Information Systems
+                Student Association of the Telkom Institute of Technology,
+                Purwokerto.
+              </li>
+              <li class="font-body font-light text-primary">
+                Coordinated the Care for New Students event division.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <Footer />
+  </div>
+</Layout>
