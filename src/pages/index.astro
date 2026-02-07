@@ -9,8 +9,30 @@ import Footer from "../components/Footer.astro";
   description="Personal CV of Urip Yoga Pangestu"
 >
   <div id="main" class="relative">
-    <div class="container mx-auto">
-      <div class="border-b border-black py-8 lg:py-16">
+    <!-- Download PDF Button -->
+    <button
+      id="download-pdf"
+      class="fixed bottom-8 right-8 z-50 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-green transition-colors duration-300"
+      aria-label="Download CV as PDF"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
+      </svg>
+    </button>
+    
+    <div class="container mx-auto pdf-content">
+      <div class="border-b border-black py-4 lg:py-8 first-section">
         <div class="container flex items-start gap-4">
           <img
             src="/me.png"
@@ -18,12 +40,12 @@ import Footer from "../components/Footer.astro";
             alt="Urip Yoga Pangestu"
           />
           <h1
-            class="pt-3 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
+            class="pt-2 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
           >
             Urip Yoga Pangestu.
           </h1>
         </div>
-        <div class="pt-6 border-b border-black pb-6">
+        <div class="pt-4 border-b border-black pb-4">
           <ul>
             <a
               href="https://www.linkedin.com/in/urip-yoga-pangestu-65a541231/"
@@ -232,15 +254,15 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <div class="border-b border-black py-8 lg:py-16 text-justify">
+      <div class="border-b border-black py-8 lg:py-16 text-justify project-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
             PROJECTS & PORTFOLIO
           </h3>
         </div>
-        <div class="space-y-8">
+        <div class="space-y-8 project-list">
           <!-- lowcosthost.id -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://lowcosthost.id" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -265,7 +287,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Blog Website -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://vercel.com/urip-yoga-pangestus-projects/astro-blog" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -288,7 +310,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Capstone Project -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://refloreo-iterum.jeniso.com/" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -320,7 +342,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- E-learning Web App -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://simapro-lms.up45.ac.id/" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -347,7 +369,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- SMK Taman Siswa Purwokerto -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://smktamansiswapwt.sch.id/" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -377,7 +399,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Selis Modis Hoki -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://selismolishoki.com" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -406,7 +428,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Portfolio Website -->
-          <div>
+          <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
               <a href="https://my-portofolio-guwa.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
@@ -433,15 +455,15 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <div class="border-b border-black py-8 lg:py-16 text-justify">
+      <div class="border-b border-black py-8 lg:py-16 text-justify org-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
             ORGANIZATIONAL EXPERIENCE
           </h3>
         </div>
-        <div class="space-y-8">
+        <div class="space-y-8 org-list">
           <!-- Himpunan Mahasiswa Sistem Informasi -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 Himpunan Mahasiswa Sistem Informasi
@@ -467,7 +489,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- PRAKTISI DAYS -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 PRAKTISI DAYS
@@ -493,7 +515,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- TODAYS 2024 -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 TODAYS 2024
@@ -514,7 +536,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Bakti Sosial Panti Asuhan -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 Bakti Sosial Panti Asuhan
@@ -538,7 +560,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Closing Dies Natalis -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 Closing Dies Natalis Jurusan Sistem Informasi 2023
@@ -565,7 +587,7 @@ import Footer from "../components/Footer.astro";
           </div>
 
           <!-- Malam Apresiasi Seni -->
-          <div>
+          <div class="org-item">
             <div class="flex justify-between items-start flex-wrap">
               <h4 class="font-body text-xl font-semibold text-primary">
                 Malam Apresiasi Seni
@@ -645,3 +667,194 @@ import Footer from "../components/Footer.astro";
     <Footer />
   </div>
 </Layout>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+  document.getElementById('download-pdf')?.addEventListener('click', () => {
+    const element = document.getElementById('main');
+    const button = document.getElementById('download-pdf');
+    const footer = document.querySelector('footer');
+    
+    // Detect if mobile device
+    const isMobile = window.innerWidth <= 768;
+    
+    // Hide button and footer before generating PDF
+    if (button) button.style.display = 'none';
+    if (footer) footer.style.display = 'none';
+    
+    // Add PDF generating class to body for mobile-specific styles
+    document.body.classList.add('generating-pdf');
+    if (isMobile) {
+      document.body.classList.add('mobile-pdf');
+    }
+    
+    // Different paper size for mobile vs desktop
+    const pdfFormat = isMobile ? [150, 297] : 'a4'; // Mobile: custom narrow format (150mm x 297mm A4 height), Desktop: standard A4
+    
+    const opt = {
+      margin: isMobile ? [0, 3, 3, 3] : [0, 5, 5, 5],
+      filename: 'CV_Urip_Yoga_Pangestu.pdf',
+      image: { type: 'jpeg', quality: 0.95 },
+      html2canvas: { 
+        scale: isMobile ? 2.8 : 1.8,
+        useCORS: true,
+        letterRendering: true,
+        logging: false,
+        scrollY: 0,
+        scrollX: 0,
+        windowWidth: element.scrollWidth,
+        windowHeight: element.scrollHeight
+      },
+      jsPDF: { 
+        unit: 'mm', 
+        format: pdfFormat, 
+        orientation: 'portrait',
+        compress: true
+      },
+      pagebreak: { 
+        mode: ['avoid-all', 'css'],
+        avoid: ['.project-item', '.org-item', 'h1', 'h2', 'h3', 'h4']
+      }
+    };
+    
+    html2pdf().set(opt).from(element).toPdf().get('pdf').then((pdf) => {
+      window.scrollTo(0, 0);
+      return pdf;
+    }).save().then(() => {
+      // Remove PDF generating classes
+      document.body.classList.remove('generating-pdf');
+      document.body.classList.remove('mobile-pdf');
+      
+      // Show button and footer again after PDF is generated
+      if (button) button.style.display = 'block';
+      if (footer) footer.style.display = 'block';
+    });
+  });
+</script>
+
+<style>
+  .pdf-content {
+    padding-top: 1rem !important;
+  }
+  
+  /* Mobile PDF specific optimizations */
+  body.generating-pdf.mobile-pdf .project-item,
+  body.generating-pdf.mobile-pdf .org-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf .project-list,
+  body.generating-pdf.mobile-pdf .org-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  body.generating-pdf.mobile-pdf h3,
+  body.generating-pdf.mobile-pdf h4 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+  
+  /* Reduce font sizes for mobile PDF */
+  body.generating-pdf.mobile-pdf h1 {
+    font-size: 2rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf h3 {
+    font-size: 1.3rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf h4 {
+    font-size: 1.1rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf .font-body {
+    font-size: 0.85rem !important;
+    line-height: 1.4 !important;
+  }
+  
+  body.generating-pdf.mobile-pdf ul {
+    padding-left: 1.5rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf .space-y-8 > * + * {
+    margin-top: 1.2rem !important;
+  }
+  
+  body.generating-pdf.mobile-pdf .py-8,
+  body.generating-pdf.mobile-pdf .lg\:py-16 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  
+  @media print {
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    #download-pdf,
+    footer {
+      display: none !important;
+    }
+    
+    #main {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    
+    .pdf-content {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+    
+    .first-section {
+      padding-top: 0.5rem !important;
+      margin-top: 0 !important;
+    }
+    
+    .border-b,
+    .project-section,
+    .org-section {
+      page-break-inside: avoid !important;
+      break-inside: avoid-page !important;
+    }
+    
+    .project-item,
+    .org-item {
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+      display: block !important;
+    }
+    
+    h1 {
+      page-break-after: avoid !important;
+      page-break-before: avoid !important;
+      break-after: avoid !important;
+      break-before: avoid !important;
+      padding-top: 0.25rem !important;
+    }
+    
+    h2, h3, h4 {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+    
+    ul, ol {
+      page-break-inside: avoid !important;
+      break-inside: avoid !important;
+    }
+    
+    .container {
+      max-width: 100% !important;
+    }
+  }
+</style>
