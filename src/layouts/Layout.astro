@@ -29,17 +29,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <title>{title}</title>
     <meta name="title" content={title} />
     <meta name="description" content={description} />
-
-    <meta
-      name="description"
-      content="Portfolio Urip Yoga Pangestu - Mahasiswa Sistem Informasi Telkom University Purwokerto yang ahli dalam pengembangan web menggunakan Laravel, Django, React.js dan teknologi modern."
-    />
     <meta
       name="keywords"
-      content="Urip Yoga Pangestu, web developer, portfolio, Laravel, Django, React.js, Sistem Informasi, Telkom University Purwokerto, Purwokerto, front-end, back-end"
+      content="Urip Yoga Pangestu, web developer, portfolio, CV, Laravel, Django, React.js, Astro, Sistem Informasi, Telkom University Purwokerto, Purwokerto, front-end, back-end, fullstack developer, Indonesia"
     />
     <meta name="author" content="Urip Yoga Pangestu" />
     <meta name="robots" content="index, follow" />
+    <meta name="language" content="id" />
+    <meta name="geo.region" content="ID-JT" />
+    <meta name="geo.placename" content="Purwokerto" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -68,6 +66,40 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Urip Yoga Pangestu",
+        "url": "https://cv-uripyogapangestu.vercel.app/",
+        "image": "https://cv-uripyogapangestu.vercel.app/me.png",
+        "jobTitle": "Information Systems Student & Web Developer",
+        "description": "Undergraduate Information Systems student at Telkom University Purwokerto with a strong interest in Web and Fullstack Development.",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Telkom University Purwokerto"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/urip-yoga-pangestu-65a541231/",
+          "https://github.com/timurlauttt",
+          "https://my-portofolio-guwa.vercel.app/"
+        ],
+        "email": "2211103102@ittelkom-pwt.ac.id",
+        "telephone": "+6285861466287",
+        "knowsAbout": [
+          "Laravel",
+          "Django",
+          "React",
+          "Web Development",
+          "Fullstack Development"
+        ]
+      }
+    </script>
 
     <ViewTransitions />
   </head>
