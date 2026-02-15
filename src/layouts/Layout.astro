@@ -22,6 +22,20 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Analytics 4 -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J6XVDXLMKH"
+      is:inline></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-J6XVDXLMKH");
+    </script>
     <link rel="icon" type="image/png" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
 
@@ -38,7 +52,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="language" content="id" />
     <meta name="geo.region" content="ID-JT" />
     <meta name="geo.placename" content="Purwokerto" />
-    <meta name="google-site-verification" content="googlea556b511026fc3a7.html" />
+    <meta
+      name="google-site-verification"
+      content="googlea556b511026fc3a7.html"
+    />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={Astro.url} />
@@ -99,15 +116,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
           "Fullstack Development"
         ]
       }
-    </script>
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J6XVDXLMKH" is:inline></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-J6XVDXLMKH');
     </script>
 
     <ViewTransitions />
