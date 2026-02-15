@@ -8,7 +8,7 @@ import Footer from "../components/Footer.astro";
   title="CV - Urip Yoga Pangestu | Web Developer & Fullstack Developer"
   description="CV dan Portfolio Urip Yoga Pangestu - Mahasiswa Sistem Informasi Telkom University Purwokerto yang berpengalaman dalam pengembangan web menggunakan Laravel, Django, React.js dan teknologi modern. Spesialisasi dalam Fullstack Development."
 >
-  <div id="main" class="relative">
+  <main id="main" class="relative">
     <!-- Download PDF Button -->
     <button
       id="download-pdf"
@@ -27,17 +27,20 @@ import Footer from "../components/Footer.astro";
           stroke-linejoin="round"
           stroke-width="2"
           d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-        />
+        ></path>
       </svg>
     </button>
-    
+
     <div class="container mx-auto pdf-content">
       <div class="border-b border-black py-4 lg:py-8 first-section">
         <div class="container flex items-start gap-4">
           <img
             src="/social.jpg"
-            class="w-24 h-24 md:hidden"
+            class="w-24 h-24 md:hidden object-cover rounded-lg"
             alt="Urip Yoga Pangestu"
+            width="96"
+            height="96"
+            loading="eager"
           />
           <h1
             class="pt-2 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
@@ -83,13 +86,14 @@ import Footer from "../components/Footer.astro";
           <p
             class="pt-8 font-body text-base lg:text-xl font-light text-primary text-justify"
           >
-            Undergraduate Information Systems student at Telkom University
-            Purwokerto with a strong interest in Web and Fullstack Development.
-            Experienced in building web applications using Laravel, Django,
-            React, and and basic knowledge of deployment in Cpanel. Passionate
-            about developing scalable, user-friendly systems and continuously
-            improving technical and problem-solving skills through real-world
-            projects.
+            Final-year Information Systems student at Telkom University
+            Purwokerto (GPA 3.76/4.00) with 2+ years of hands-on experience in
+            fullstack web development. Successfully deployed 15+ production
+            websites using Laravel, Django, and React. Led capstone project team
+            delivering e-catalog application for SME client, managing full
+            development lifecycle from database design to deployment.
+            Specialized in building scalable web applications with focus on
+            clean code and optimal user experience.
           </p>
         </div>
       </div>
@@ -138,6 +142,78 @@ import Footer from "../components/Footer.astro";
               <li class="font-body font-light text-primary">
                 Graduated with an average School Examination score of
                 85.67/100.00.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-black py-8 lg:py-16">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            CERTIFICATIONS & ACHIEVEMENTS
+          </h3>
+        </div>
+        <div class="space-y-6">
+          <!-- MSIB Certification -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                MSIB Batch 7 - Platform and Web Developer (Kampus Merdeka)
+              </h4>
+              <span class="font-body text-lg text-primary">
+                September - December 2024
+              </span>
+            </div>
+            <p class="pt-1 font-body text-lg text-primary">
+              Certified Independent Study Program by Educourse.id x Ministry of
+              Education
+            </p>
+            <ul class="pt-2 list-disc pl-5">
+              <li class="font-body font-light text-primary">
+                Completed 900 hours intensive training in educational technology
+                platform development
+              </li>
+              <li class="font-body font-light text-primary">
+                Achieved excellent scores (89-99) across 10 core competencies:
+                Educational Platforms, Design Thinking, Front-end & Back-end
+                Development, Rapid Prototyping, CMS Integration, Gamification,
+                Data Analysis, and Project Presentation
+              </li>
+              <li class="font-body font-light text-primary">
+                <strong>Award:</strong> Top 3 Best Capstone Project - Developed innovative
+                education platform solution with team
+              </li>
+            </ul>
+          </div>
+
+          <!-- STEM Endorsed -->
+          <div>
+            <div class="flex justify-between items-start flex-wrap">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                STEM Endorsed Certificate
+              </h4>
+              <span class="font-body text-lg text-primary"> January 2025 </span>
+            </div>
+            <p class="pt-1 font-body text-lg text-primary">
+              International certification recognizing STEM-based education
+              competency
+            </p>
+          </div>
+
+          <!-- Academic Achievement -->
+          <div>
+            <h4 class="font-body text-xl font-semibold text-primary">
+              Academic Excellence
+            </h4>
+            <ul class="pt-2 list-disc pl-5">
+              <li class="font-body font-light text-primary">
+                GPA 3.76/4.00 - Information Systems, Telkom University
+                Purwokerto
+              </li>
+              <li class="font-body font-light text-primary">
+                Successfully led capstone project team delivering e-catalog
+                application for SME client
               </li>
             </ul>
           </div>
@@ -254,7 +330,9 @@ import Footer from "../components/Footer.astro";
         </div>
       </div>
 
-      <div class="border-b border-black py-8 lg:py-16 text-justify project-section">
+      <div
+        class="border-b border-black py-8 lg:py-16 text-justify project-section"
+      >
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
             PROJECTS & PORTFOLIO
@@ -264,8 +342,14 @@ import Footer from "../components/Footer.astro";
           <!-- lowcosthost.id -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://lowcosthost.id" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://lowcosthost.id"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   lowcosthost.id
                 </h4>
               </a>
@@ -289,8 +373,14 @@ import Footer from "../components/Footer.astro";
           <!-- Blog Website -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://vercel.com/urip-yoga-pangestus-projects/astro-blog" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://vercel.com/urip-yoga-pangestus-projects/astro-blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   Blog Website
                 </h4>
               </a>
@@ -312,8 +402,14 @@ import Footer from "../components/Footer.astro";
           <!-- Capstone Project -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://refloreo-iterum.jeniso.com/" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://refloreo-iterum.jeniso.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   Capstone Project - E-Catalog Application
                 </h4>
               </a>
@@ -344,9 +440,15 @@ import Footer from "../components/Footer.astro";
           <!-- E-learning Web App -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://simapro-lms.up45.ac.id/" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
-                  E-learning Web App
+              <a
+                href="https://simapro-lms.up45.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
+                  E-learning Web App (Full-time Contract)
                 </h4>
               </a>
               <span class="font-body text-lg text-primary">
@@ -354,16 +456,23 @@ import Footer from "../components/Footer.astro";
               </span>
             </div>
             <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Fullstack Web Dev
+              • Fullstack Web Developer (Contract Position)
             </p>
             <ul class="pt-2 list-disc pl-10">
               <li class="font-body font-light text-primary">
-                Building a learning management system website using the Laravel
-                framework, with three main roles divided into students,
-                lecturers, and admins
+                Developed comprehensive Learning Management System (LMS) using
+                Laravel & MySQL, serving <strong>1,000+ active students</strong> and
+                <strong>60+ instructors</strong> across multiple courses
               </li>
               <li class="font-body font-light text-primary">
-                perform maintenance after development is complete
+                Implemented role-based access control (RBAC) with 3 user levels
+                (students, lecturers, administrators) and core features: course
+                management, assignment submission system, grading module, and
+                real-time notifications
+              </li>
+              <li class="font-body font-light text-primary">
+                Perform ongoing maintenance, bug fixes, and feature enhancements
+                post-deployment ensuring 99% uptime
               </li>
             </ul>
           </div>
@@ -371,8 +480,14 @@ import Footer from "../components/Footer.astro";
           <!-- SMK Taman Siswa Purwokerto -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://smktamansiswapwt.sch.id/" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://smktamansiswapwt.sch.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   SMK Taman Siswa Purwokerto Company Profile
                 </h4>
               </a>
@@ -401,8 +516,14 @@ import Footer from "../components/Footer.astro";
           <!-- Selis Modis Hoki -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://selismolishoki.com" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://selismolishoki.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   Selis Molis Hoki
                 </h4>
               </a>
@@ -430,8 +551,14 @@ import Footer from "../components/Footer.astro";
           <!-- Portfolio Website -->
           <div class="project-item">
             <div class="flex justify-between items-start flex-wrap">
-              <a href="https://my-portofolio-guwa.vercel.app/" target="_blank" rel="noopener noreferrer">
-                <h4 class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors">
+              <a
+                href="https://my-portofolio-guwa.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h4
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
                   Portfolio Website
                 </h4>
               </a>
@@ -668,34 +795,57 @@ import Footer from "../components/Footer.astro";
   </div>
 </Layout>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 <script>
-  document.getElementById('download-pdf')?.addEventListener('click', () => {
-    const element = document.getElementById('main');
-    const button = document.getElementById('download-pdf');
-    const footer = document.querySelector('footer');
-    
+  // Lazy load html2pdf library hanya saat dibutuhkan
+  function loadHtml2Pdf() {
+    return new Promise((resolve, reject) => {
+      if (window.html2pdf) {
+        resolve(window.html2pdf);
+        return;
+      }
+      const script = document.createElement("script");
+      script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
+      script.onload = () => resolve(window.html2pdf);
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  document.getElementById("download-pdf")?.addEventListener("click", async () => {
+    const button = document.getElementById("download-pdf");
+    const element = document.getElementById("main");
+    const footer = document.querySelector("footer");
+
+    // Show loading indicator
+    if (button) {
+      button.innerHTML = '<svg class="animate-spin h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+    }
+
+    try {
+      // Load library jika belum ada
+      await loadHtml2Pdf();
+
     // Detect if mobile device
     const isMobile = window.innerWidth <= 768;
-    
+
     // Hide button and footer before generating PDF
-    if (button) button.style.display = 'none';
-    if (footer) footer.style.display = 'none';
-    
+    if (button) button.style.display = "none";
+    if (footer) footer.style.display = "none";
+
     // Add PDF generating class to body for mobile-specific styles
-    document.body.classList.add('generating-pdf');
+    document.body.classList.add("generating-pdf");
     if (isMobile) {
-      document.body.classList.add('mobile-pdf');
+      document.body.classList.add("mobile-pdf");
     }
-    
+
     // Different paper size for mobile vs desktop
-    const pdfFormat = isMobile ? [150, 297] : 'a4'; // Mobile: custom narrow format (150mm x 297mm A4 height), Desktop: standard A4
-    
+    const pdfFormat = isMobile ? [150, 297] : "a4"; // Mobile: custom narrow format (150mm x 297mm A4 height), Desktop: standard A4
+
     const opt = {
       margin: isMobile ? [0, 3, 3, 3] : [0, 5, 5, 5],
-      filename: 'CV_Urip_Yoga_Pangestu.pdf',
-      image: { type: 'jpeg', quality: 0.95 },
-      html2canvas: { 
+      filename: "CV_Urip_Yoga_Pangestu.pdf",
+      image: { type: "jpeg", quality: 0.95 },
+      html2canvas: {
         scale: isMobile ? 2.8 : 1.8,
         useCORS: true,
         letterRendering: true,
@@ -703,32 +853,50 @@ import Footer from "../components/Footer.astro";
         scrollY: 0,
         scrollX: 0,
         windowWidth: element.scrollWidth,
-        windowHeight: element.scrollHeight
+        windowHeight: element.scrollHeight,
       },
-      jsPDF: { 
-        unit: 'mm', 
-        format: pdfFormat, 
-        orientation: 'portrait',
-        compress: true
+      jsPDF: {
+        unit: "mm",
+        format: pdfFormat,
+        orientation: "portrait",
+        compress: true,
       },
-      pagebreak: { 
-        mode: ['avoid-all', 'css'],
-        avoid: ['.project-item', '.org-item', 'h1', 'h2', 'h3', 'h4']
-      }
+      pagebreak: {
+        mode: ["avoid-all", "css"],
+        avoid: [".project-item", ".org-item", "h1", "h2", "h3", "h4"],
+      },
     };
-    
-    html2pdf().set(opt).from(element).toPdf().get('pdf').then((pdf) => {
-      window.scrollTo(0, 0);
-      return pdf;
-    }).save().then(() => {
-      // Remove PDF generating classes
-      document.body.classList.remove('generating-pdf');
-      document.body.classList.remove('mobile-pdf');
-      
-      // Show button and footer again after PDF is generated
-      if (button) button.style.display = 'block';
-      if (footer) footer.style.display = 'block';
-    });
+
+    html2pdf()
+      .set(opt)
+      .from(element)
+      .toPdf()
+      .get("pdf")
+      .then((pdf) => {
+        window.scrollTo(0, 0);
+        return pdf;
+      })
+      .save()
+      .then(() => {
+        // Remove PDF generating classes
+        document.body.classList.remove("generating-pdf");
+        document.body.classList.remove("mobile-pdf");
+
+        // Show button and footer again after PDF is generated
+        if (button) {
+          button.style.display = "block";
+          // Restore original icon
+          button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>';
+        }
+        if (footer) footer.style.display = "block";
+      });
+    } catch (error) {
+      console.error('Failed to generate PDF:', error);
+      if (button) {
+        button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>';
+      }
+      alert('Failed to generate PDF. Please try again.');
+    }
   });
 </script>
 
@@ -736,7 +904,7 @@ import Footer from "../components/Footer.astro";
   .pdf-content {
     padding-top: 1rem !important;
   }
-  
+
   /* Mobile PDF specific optimizations */
   body.generating-pdf.mobile-pdf .project-item,
   body.generating-pdf.mobile-pdf .org-item {
@@ -744,97 +912,97 @@ import Footer from "../components/Footer.astro";
     break-inside: avoid !important;
     margin-bottom: 1rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf .project-list,
   body.generating-pdf.mobile-pdf .org-list {
     display: flex;
     flex-direction: column;
   }
-  
+
   body.generating-pdf.mobile-pdf h3,
   body.generating-pdf.mobile-pdf h4 {
     page-break-after: avoid !important;
     break-after: avoid !important;
   }
-  
+
   /* Reduce font sizes for mobile PDF */
   body.generating-pdf.mobile-pdf h1 {
     font-size: 2rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf h3 {
     font-size: 1.3rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf h4 {
     font-size: 1.1rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf .font-body {
     font-size: 0.85rem !important;
     line-height: 1.4 !important;
   }
-  
+
   body.generating-pdf.mobile-pdf ul {
     padding-left: 1.5rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf .space-y-8 > * + * {
     margin-top: 1.2rem !important;
   }
-  
+
   body.generating-pdf.mobile-pdf .py-8,
   body.generating-pdf.mobile-pdf .lg\:py-16 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
-  
+
   @media print {
     * {
       box-sizing: border-box;
     }
-    
+
     body {
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
       margin: 0 !important;
       padding: 0 !important;
     }
-    
+
     #download-pdf,
     footer {
       display: none !important;
     }
-    
+
     #main {
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
-    
+
     .pdf-content {
       padding-top: 0 !important;
       margin-top: 0 !important;
     }
-    
+
     .first-section {
       padding-top: 0.5rem !important;
       margin-top: 0 !important;
     }
-    
+
     .border-b,
     .project-section,
     .org-section {
       page-break-inside: avoid !important;
       break-inside: avoid-page !important;
     }
-    
+
     .project-item,
     .org-item {
       page-break-inside: avoid !important;
       break-inside: avoid !important;
       display: block !important;
     }
-    
+
     h1 {
       page-break-after: avoid !important;
       page-break-before: avoid !important;
@@ -842,17 +1010,20 @@ import Footer from "../components/Footer.astro";
       break-before: avoid !important;
       padding-top: 0.25rem !important;
     }
-    
-    h2, h3, h4 {
+
+    h2,
+    h3,
+    h4 {
       page-break-after: avoid !important;
       break-after: avoid !important;
     }
-    
-    ul, ol {
+
+    ul,
+    ol {
       page-break-inside: avoid !important;
       break-inside: avoid !important;
     }
-    
+
     .container {
       max-width: 100% !important;
     }
