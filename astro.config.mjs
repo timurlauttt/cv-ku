@@ -4,7 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://cv-uripyogapangestu.vercel.app/',
+  site: 'https://cv-uripyogapangestu.pangestudev.web.id/',
   integrations: [
     tailwind({
       applyBaseStyles: false,

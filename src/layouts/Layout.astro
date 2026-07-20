@@ -6,12 +6,14 @@ interface Props {
   title: string;
   description?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 const {
   title,
   description = "A personal blog built with Astro and Tailwind CSS",
   image = "/social.jpg",
+  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -60,7 +62,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
       content="Urip Yoga Pangestu, web developer, portfolio, CV, Laravel, Django, React.js, Astro, Sistem Informasi, Telkom University Purwokerto, Purwokerto, front-end, back-end, fullstack developer, Indonesia"
     />
     <meta name="author" content="Urip Yoga Pangestu" />
-    <meta name="robots" content="index, follow" />
+    <meta
+      name="robots"
+      content={noindex ? "noindex, nofollow" : "index, follow"}
+    />
     <meta name="language" content="id" />
     <meta name="geo.region" content="ID-JT" />
     <meta name="geo.placename" content="Purwokerto" />
