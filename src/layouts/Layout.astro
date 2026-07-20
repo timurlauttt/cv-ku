@@ -23,18 +23,30 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Analytics 4 -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-J6XVDXLMKH"
-      is:inline></script>
+    <!-- Google Analytics 4 (deferred until first interaction / idle) -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "G-J6XVDXLMKH");
+
+      function loadGA() {
+        if (window.__gaLoaded) return;
+        window.__gaLoaded = true;
+        var script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-J6XVDXLMKH";
+        document.head.appendChild(script);
+        gtag("js", new Date());
+        gtag("config", "G-J6XVDXLMKH");
+      }
+
+      ["scroll", "mousemove", "touchstart", "keydown"].forEach(function (evt) {
+        window.addEventListener(evt, loadGA, { once: true, passive: true });
+      });
+      window.addEventListener("load", function () {
+        setTimeout(loadGA, 3500);
+      });
     </script>
     <link rel="icon" type="image/png" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
@@ -75,12 +87,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Icons - Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
