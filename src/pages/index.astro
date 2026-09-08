@@ -1,18 +1,17 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 ---
 
 <Layout
-  title="CV - Urip Yoga Pangestu | Web Developer & Fullstack Developer"
-  description="CV dan Portfolio Urip Yoga Pangestu - Mahasiswa Sistem Informasi Telkom University Purwokerto yang berpengalaman dalam pengembangan web menggunakan Laravel, Django, React.js dan teknologi modern. Spesialisasi dalam Fullstack Development."
+  title="CV - Urip Yoga Pangestu | Fullstack Software Engineer"
+  description="CV & Resume Urip Yoga Pangestu - Result-driven Fullstack Software Engineer with expertise in Laravel 12/13, React.js, Tailwind CSS, DevOps (Linux, Nginx, Podman, Cloudflare), and AI API integration."
 >
   <main id="main" class="relative">
     <!-- Download PDF Button -->
     <button
       id="download-pdf"
-      class="fixed bottom-8 right-8 z-50 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-green transition-colors duration-300"
+      class="fixed bottom-8 right-8 z-50 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-green transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
       aria-label="Download CV as PDF"
     >
       <svg
@@ -32,36 +31,67 @@ import Footer from "../components/Footer.astro";
     </button>
 
     <div class="container mx-auto pdf-content">
+      <!-- HEADER & SUMMARY -->
       <div class="border-b border-black py-4 lg:py-8 first-section">
-        <div class="container flex items-start gap-4">
+        <div class="flex items-start gap-4">
           <img
-            src="/social.jpg"
+            src="/me.png"
             class="w-24 h-24 md:hidden object-cover rounded-lg"
             alt="Urip Yoga Pangestu"
             width="96"
             height="96"
             loading="eager"
           />
-          <h1
-            class="pt-2 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
-          >
-            Urip Yoga Pangestu.
-          </h1>
+          <div>
+            <h1
+              class="pt-2 font-body text-4xl font-semibold text-primary md:text-5xl lg:text-6xl"
+            >
+              Urip Yoga Pangestu
+            </h1>
+            <p class="font-body text-lg md:text-xl font-medium text-secondary pt-1">
+              Fullstack Software Engineer
+            </p>
+          </div>
         </div>
+
         <div class="pt-4 border-b border-black pb-4">
-          <ul>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-sm md:text-base">
             <li>
               <a
-                href="https://www.linkedin.com/in/urip-yoga-pangestu-65a541231/"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:hello@pangestudev.web.id"
+                class="hover:text-secondary transition-colors"
               >
-                <span class="font-bold">linkedin</span> : Urip Yoga Pangestu
+                <span class="font-bold">email</span> : hello@pangestudev.web.id
               </a>
             </li>
             <li>
-              <a href="mailto:2211103102@ittelkom-pwt.ac.id">
-                <span class="font-bold">email</span> : 2211103102@ittelkom-pwt.ac.id
+              <a
+                href="https://pangestudev.web.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-secondary transition-colors"
+              >
+                <span class="font-bold">website</span> : pangestudev.web.id
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/uripyogapangestu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-secondary transition-colors"
+              >
+                <span class="font-bold">linkedin</span> : linkedin.com/in/uripyogapangestu
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/timurlauttt"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-secondary transition-colors"
+              >
+                <span class="font-bold">github</span> : github.com/timurlauttt
               </a>
             </li>
             <li>
@@ -69,776 +99,278 @@ import Footer from "../components/Footer.astro";
                 href="https://wa.me/6285861466287"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="hover:text-secondary transition-colors"
               >
-                <span class="font-bold">telp</span> : (+62) 858-6146-6287
+                <span class="font-bold">phone</span> : (+62) 858-6146-6287
               </a>
             </li>
             <li>
-              <a href="https://github.com/timurlauttt">
-                <span class="font-bold">github</span> : timurlauttt
-              </a>
-            </li>
-            <li>
-              <a href="https://my-portofolio-guwa.vercel.app/">
-                <span class="font-bold">portfolio</span> : my-portofolio-guwa.vercel.app
-              </a>
+              <span class="font-bold">location</span> : Purwokerto, Indonesia
             </li>
           </ul>
         </div>
+
         <div class="pt-6">
-          <h2 class="font-body text-2xl font-semibold text-primary">SUMMARY</h2>
+          <h2 class="font-body text-2xl font-semibold text-primary">
+            PROFESSIONAL SUMMARY
+          </h2>
           <p
-            class="pt-8 font-body text-base lg:text-xl font-light text-primary text-justify"
+            class="pt-4 font-body text-base lg:text-lg font-light text-primary text-justify leading-relaxed"
           >
-            Final-year Information Systems student at Telkom University
-            Purwokerto (GPA 3.76/4.00) with 2+ years of hands-on experience in
-            fullstack web development. Successfully deployed 15+ production
-            websites using Laravel, Django, and React. Led capstone project team
-            delivering e-catalog application for SME client, managing full
-            development lifecycle from database design to deployment.
-            Specialized in building scalable web applications with focus on
-            clean code and optimal user experience.
+            Result-driven Fullstack Software Engineer with a proven track record of architecting, deploying, and maintaining high-performance web applications and institutional systems. Deep expertise in modern PHP (Laravel 12/13) and JavaScript (React.js) ecosystems, combined with robust DevOps capabilities in Linux, Nginx, and Podman environments. Demonstrated success in integrating third-party APIs (Midtrans, Google Gemini AI) and optimizing cloud infrastructure (Cloudflare ecosystem) to deliver secure, scalable, and automated digital solutions.
           </p>
         </div>
       </div>
 
-      <div class="border-b border-black py-8 lg:py-16">
-        <div class="flex items-center pb-6">
-          <h3 class="font-body text-2xl font-semibold text-primary">
-            EDUCATION
-          </h3>
-        </div>
-        <div class="space-y-8">
-          <!-- Telkom University -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Telkom University Purwokerto
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September 2022 - Present
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              Bachelor of Information Systems
-            </p>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                Information Systems student with a provisional GPA of 3.76/4.00.
-              </li>
-            </ul>
-          </div>
-
-          <!-- SMA Negeri 1 Sokaraja -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                SMA Negeri 1 Sokaraja
-              </h4>
-              <span class="font-body text-lg text-primary">
-                July 2018 - May 2021
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              Concentration of majors in Mathematics and Natural Sciences
-            </p>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                Graduated with an average School Examination score of
-                85.67/100.00.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-b border-black py-8 lg:py-16">
-        <div class="flex items-center pb-6">
-          <h3 class="font-body text-2xl font-semibold text-primary">
-            CERTIFICATIONS & ACHIEVEMENTS
-          </h3>
-        </div>
-        <div class="space-y-6">
-          <!-- LSP Informatika BNSP -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Sertifikat Kompetensi Pengembang Web (Web Developer)
-              </h4>
-              <span class="font-body text-lg text-primary">April 2026</span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              Lembaga Sertifikasi Profesi (LSP) INFORMATIKA — Licensed by BNSP
-              (BNSP-LSP-317-ID)
-            </p>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                Passed competency assessment (Uji Kompetensi) in Web Developer
-                scheme on 26 April 2026 with result: <strong>KOMPETEN</strong>
-              </li>
-              <li class="font-body font-light text-primary">
-                Certificate No: 09xxx/SKHA/LSP-INF/04/2026
-              </li>
-            </ul>
-          </div>
-
-          <!-- Google AI Professional Certificate -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Google AI Professional Certificate
-              </h4>
-              <span class="font-body text-lg text-primary">June 2026</span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              Google Career Certificates via Coursera — 7 Courses
-            </p>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                Completed online professional certificate demonstrating ability
-                to apply AI across core skills: Brainstorming & Planning,
-                Research & Insights, Writing & Communication, Content Creation,
-                Data Analysis, and App Building
-              </li>
-              <li class="font-body font-light text-primary">
-                Built a portfolio of 20+ AI artifacts and developed a custom AI
-                solution using vibe coding techniques
-              </li>
-            </ul>
-          </div>
-          <!-- MSIB Certification -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                MSIB Batch 7 - Platform and Web Developer (Kampus Merdeka)
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September - December 2024
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              Certified Independent Study Program by Educourse.id x Ministry of
-              Education
-            </p>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                Completed 900 hours intensive training in educational technology
-                platform development
-              </li>
-              <li class="font-body font-light text-primary">
-                Achieved excellent scores (89-99) across 10 core competencies:
-                Educational Platforms, Design Thinking, Front-end & Back-end
-                Development, Rapid Prototyping, CMS Integration, Gamification,
-                Data Analysis, and Project Presentation
-              </li>
-              <li class="font-body font-light text-primary">
-                <strong>Award:</strong> Top 3 Best Capstone Project - Developed innovative
-                education platform solution with team
-              </li>
-            </ul>
-          </div>
-
-          <!-- STEM Endorsed -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                STEM Endorsed Certificate
-              </h4>
-              <span class="font-body text-lg text-primary"> January 2025 </span>
-            </div>
-            <p class="pt-1 font-body text-lg text-primary">
-              International certification recognizing STEM-based education
-              competency
-            </p>
-          </div>
-
-          <!-- Academic Achievement -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary">
-              Academic Excellence
-            </h4>
-            <ul class="pt-2 list-disc pl-5">
-              <li class="font-body font-light text-primary">
-                GPA 3.76/4.00 - Information Systems, Telkom University
-                Purwokerto
-              </li>
-              <li class="font-body font-light text-primary">
-                Successfully led capstone project team delivering e-catalog
-                application for SME client
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-b border-black py-8 lg:py-16">
+      <!-- TECHNICAL SKILLS -->
+      <div class="border-b border-black py-8 lg:py-12 skill-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
             TECHNICAL SKILLS
           </h3>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Operating Systems -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Operating Systems
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Languages -->
+          <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
+            <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              Languages
             </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">Windows</li>
-              <li class="font-body font-light text-primary">
-                Linux (familiar with Ubuntu, Fedora Workstation, Fedora KDE
-                Plasma)
-              </li>
-            </ul>
+            <p class="font-body font-light text-primary text-base">
+              PHP 8.2, JavaScript (ES6+), Python, HTML5, CSS3.
+            </p>
           </div>
 
-          <!-- Database -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Database
+          <!-- Frameworks & Libraries -->
+          <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
+            <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              Frameworks & Libraries
             </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">MySQL</li>
-              <li class="font-body font-light text-primary">SqLite</li>
-            </ul>
+            <p class="font-body font-light text-primary text-base">
+              Laravel (v12, v13), React.js, Tailwind CSS (v4), Django, Bootstrap, Alpine.js, Blade.
+            </p>
           </div>
 
-          <!-- Programming & Frameworks -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Programming & Frameworks
+          <!-- DevOps & Cloud -->
+          <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
+            <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              DevOps & Cloud
             </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">
-                PHP (Laravel, CodeIgniter, PHP Native)
-              </li>
-              <li class="font-body font-light text-primary">
-                Python (Django, FASTApi)
-              </li>
-              <li class="font-body font-light text-primary">
-                JavaScript (React, basic frontend logic)
-              </li>
-            </ul>
+            <p class="font-body font-light text-primary text-base">
+              Linux, Podman, Nginx, Cloudflare (R2 Storage, Pages), GitHub Actions, Vercel, cPanel, WebPush API, PWA.
+            </p>
           </div>
 
-          <!-- Version Control -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Version Control
+          <!-- Database & Integrations -->
+          <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
+            <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+              Database & Integrations
             </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">Git</li>
-              <li class="font-body font-light text-primary">Github</li>
-            </ul>
-          </div>
-
-          <!-- Frontend -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Frontend
-            </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">HTML5</li>
-              <li class="font-body font-light text-primary">CSS3</li>
-              <li class="font-body font-light text-primary">
-                JavaScript (ES6+)
-              </li>
-              <li class="font-body font-light text-primary">React.js</li>
-              <li class="font-body font-light text-primary">Bootstrap</li>
-              <li class="font-body font-light text-primary">Tailwind CSS</li>
-            </ul>
-          </div>
-
-          <!-- Other Tools -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Other Tools
-            </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">
-                Figma (UI/UX & prototyping)
-              </li>
-              <li class="font-body font-light text-primary">
-                Cpanel(Basic Website Deployment)
-              </li>
-              <li class="font-body font-light text-primary">
-                Vercel(for temporary testing)
-              </li>
-            </ul>
-          </div>
-
-          <!-- Backend -->
-          <div>
-            <h4 class="font-body text-xl font-semibold text-primary pb-3">
-              Backend
-            </h4>
-            <ul class="list-disc pl-5 space-y-1">
-              <li class="font-body font-light text-primary">PHP</li>
-              <li class="font-body font-light text-primary">Laravel</li>
-              <li class="font-body font-light text-primary">Python</li>
-              <li class="font-body font-light text-primary">CodeIgniter</li>
-              <li class="font-body font-light text-primary">Django</li>
-            </ul>
+            <p class="font-body font-light text-primary text-base">
+              MySQL, Midtrans API, Google Gemini 2.5 Flash, RESTful API, Spatie Permission.
+            </p>
           </div>
         </div>
       </div>
 
+      <!-- KEY ENGINEERING PROJECTS -->
       <div
-        class="border-b border-black py-8 lg:py-16 text-justify project-section"
+        class="border-b border-black py-8 lg:py-12 text-justify project-section"
       >
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            PROJECTS & PORTFOLIO
+            KEY ENGINEERING PROJECTS
           </h3>
         </div>
         <div class="space-y-8 project-list">
-          <!-- lowcosthost.id -->
+          <!-- HIT E-Tracer -->
           <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://lowcosthost.id"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  lowcosthost.id
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                January 2026 - Present
+            <div class="flex justify-between items-baseline flex-wrap gap-2">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                HIT E-Tracer — Institutional Partnership Management System
+              </h4>
+              <span class="font-body text-sm md:text-base font-medium text-secondary">
+                Laravel 13, React.js, MySQL, Cloudflare R2
               </span>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Technical Team
-            </p>
-            <ul class="pt-2 list-disc pl-10">
+            <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Successfully deployed a total of 15 websites
+                Engineered an end-to-end platform to automate institutional partnership submissions (MoU, MoA, IA) at Telkom University Purwokerto, featuring a hybrid dynamic form engine.
               </li>
               <li class="font-body font-light text-primary">
-                Performing maintenance and optimisation on each deployed website
+                Integrated Google Gemini 2.5 Flash AI for smart document parsing and validation assistance to accelerate verification workflows.
+              </li>
+              <li class="font-body font-light text-primary">
+                Developed automated SLA turnaround monitoring with visual tracking, alongside scheduled email and web notifications for pending reviews and renewals.
               </li>
             </ul>
           </div>
 
-          <!-- Blog Website -->
+          <!-- MIN 2 Banyumas -->
           <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://vercel.com/urip-yoga-pangestus-projects/astro-blog"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  Blog Website
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                January 2026 - Present
+            <div class="flex justify-between items-baseline flex-wrap gap-2">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                MIN 2 Banyumas — Integrated School Portal & Online Admission
+              </h4>
+              <span class="font-body text-sm md:text-base font-medium text-secondary">
+                Laravel 12, Tailwind CSS v4, Midtrans API
               </span>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Personal blog website
-            </p>
-            <ul class="pt-2 list-disc pl-10">
+            <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Developing & deploying personal blog and portfolio website
-                developed using Astro, Tailwind CSS
+                Developed a production-ready school information system featuring an end-to-end online student admission (PPDB) pipeline with automated registration codes and document validation.
+              </li>
+              <li class="font-body font-light text-primary">
+                Implemented seamless payment processing via Midtrans API integration (Snap Token & automated webhook verification).
+              </li>
+              <li class="font-body font-light text-primary">
+                Built a NISN-based online graduation announcement module that dynamically generates verifiable SKL documents with QR codes.
               </li>
             </ul>
           </div>
 
-          <!-- Capstone Project -->
+          <!-- Pancacinta -->
           <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://refloreo-iterum.jeniso.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  Capstone Project - E-Catalog Application
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                September 2025 - December 2025
+            <div class="flex justify-between items-baseline flex-wrap gap-2">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Pancacinta — School Mini LMS & Student Activity Tracker
+              </h4>
+              <span class="font-body text-sm md:text-base font-medium text-secondary">
+                Laravel 13, Alpine.js, PWA, WebPush API
               </span>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Becoming the capstone project leader
-            </p>
-            <ul class="pt-2 list-disc pl-10">
+            <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Led the 'capstone' project team as project lead, overseeing
-                planning, execution, and delivery of the e-catalog application
-                with a focus on timeline management and team coordination.
+                Architected a multi-role hierarchical LMS for Superadmin, Admin, Teachers, Students, and Parents, equipped with Spatie Permission access control.
               </li>
               <li class="font-body font-light text-primary">
-                Designed and implemented core database architecture for MySQL,
-                ensuring scalability and scheme to ensure data integrity and an
-                optimal data structure, while also developing comprehensive CRUD
-                functionality for managing products, categories, and users
-                within the admin dashboard to streamline administrative
-                operations
+                Engineered a secure online examination engine featuring server-side time verification, per-question auto-save, and instant automated grade calculations.
+              </li>
+              <li class="font-body font-light text-primary">
+                Deployed as an installable Progressive Web App (PWA) with offline fallbacks, scheduled push reminders, and integrated Cloudflare R2 storage featuring on-the-fly WebP image compression.
               </li>
             </ul>
           </div>
 
-          <!-- E-learning Web App -->
+          <!-- Photobooth Web Application -->
           <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://simapro-lms.up45.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  E-learning Web App (Full-time Contract)
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                March 2025 - August 2025
+            <div class="flex justify-between items-baseline flex-wrap gap-2">
+              <h4 class="font-body text-xl font-semibold text-primary">
+                Photobooth Web Application
+              </h4>
+              <span class="font-body text-sm md:text-base font-medium text-secondary">
+                React.js, Tailwind, Vercel
               </span>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Fullstack Web Developer (Contract Position)
-            </p>
-            <ul class="pt-2 list-disc pl-10">
+            <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Developed comprehensive Learning Management System (LMS) using
-                Laravel & MySQL, serving <strong>1,000+ active students</strong> and
-                <strong>60+ instructors</strong> across multiple courses
+                Created a responsive, browser-based photo booth application enabling seamless real-time webcam streaming and automated multi-shot capture.
               </li>
               <li class="font-body font-light text-primary">
-                Implemented role-based access control (RBAC) with 3 user levels
-                (students, lecturers, administrators) and core features: course
-                management, assignment submission system, grading module, and
-                real-time notifications
-              </li>
-              <li class="font-body font-light text-primary">
-                Perform ongoing maintenance, bug fixes, and feature enhancements
-                post-deployment ensuring 99% uptime
-              </li>
-            </ul>
-          </div>
-
-          <!-- SMK Taman Siswa Purwokerto -->
-          <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://smktamansiswapwt.sch.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  SMK Taman Siswa Purwokerto Company Profile
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                September 2025 - December 2025
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Front-end Dev
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Designed and developed the user interface for the company
-                profile website using Laravel Blade templates, creating an
-                intuitive and visually appealing frontend experience for
-                visitors
-              </li>
-              <li class="font-body font-light text-primary">
-                Ensured cross-device compatibility by implementing responsive
-                design principles, guaranteeing optimal display and
-                functionality across desktop, tablet, and mobile devices
-              </li>
-            </ul>
-          </div>
-
-          <!-- Selis Modis Hoki -->
-          <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://selismolishoki.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  Selis Molis Hoki
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary">
-                May 2025 - August 2025
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Front-end Dev
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Designed and developed a web application using Laravel framework
-                with MySQL database, implementing modern web development
-                practices and MVC architecture.
-              </li>
-              <li class="font-body font-light text-primary">
-                Created responsive user interfaces using Laravel Blade templates
-                and integrated frontend technologies including JavaScript and
-                CSS frameworks for optimal user experience.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Portfolio Website -->
-          <div class="project-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <a
-                href="https://my-portofolio-guwa.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h4
-                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
-                >
-                  Portfolio Website
-                </h4>
-              </a>
-              <span class="font-body text-lg text-primary"> August 2025 </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Fullstack Web Dev
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Creating a portfolio website using React.js
-              </li>
-              <li class="font-body font-light text-primary">
-                Deploying on Vercel
-              </li>
-              <li class="font-body font-light text-primary">
-                Integrating Firebase for data storage/database and backend
+                Implemented live canvas rendering for aesthetic photo strip layouts, supporting instant interactive adjustments and one-click high-resolution downloads.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="border-b border-black py-8 lg:py-16 text-justify org-section">
+      <!-- PROFESSIONAL EXPERIENCE -->
+      <div class="border-b border-black py-8 lg:py-12 text-justify exp-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            ORGANIZATIONAL EXPERIENCE
+            PROFESSIONAL EXPERIENCE
           </h3>
         </div>
-        <div class="space-y-8 org-list">
-          <!-- Himpunan Mahasiswa Sistem Informasi -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Himpunan Mahasiswa Sistem Informasi
-              </h4>
-              <span class="font-body text-lg text-primary">
-                August 2025 - December 2024
+        <div class="space-y-8 exp-list">
+          <div class="exp-item">
+            <div class="flex justify-between items-start flex-wrap gap-2">
+              <div>
+                <a
+                  href="https://lowcosthost.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-body text-xl font-semibold text-primary hover:text-secondary hover:underline transition-colors"
+                >
+                  lowcosthost.id
+                </a>
+                <p class="pt-1 font-body text-lg font-medium text-secondary">
+                  Infrastructure Engineer & Technical Team
+                </p>
+              </div>
+              <span class="font-body text-base text-primary font-medium">
+                Jan 2026 – Present
               </span>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Entrepreneur Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
+            <ul class="pt-3 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Successfully implemented the PDH Skirt Sales program, with total
-                sales of over 150 units
+                Executed ongoing maintenance and advanced VPS/Linux server optimization via Nginx across 15+ production websites, ensuring system stability to handle high-traffic concurrency.
               </li>
               <li class="font-body font-light text-primary">
-                Assisted in the implementation of other programs such as talk
-                shows, national seminars, and goods sales, within the scope of
-                entrepreneurship.
+                Managed seamless web deployments and database architectures leveraging CI/CD pipelines through GitHub Actions.
               </li>
             </ul>
           </div>
+        </div>
+      </div>
 
-          <!-- PRAKTISI DAYS -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                PRAKTISI DAYS
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September 2024
-              </span>
+      <!-- EDUCATION & CERTIFICATIONS -->
+      <div class="border-b border-black py-8 lg:py-12 edu-cert-section">
+        <div class="flex items-center pb-6">
+          <h3 class="font-body text-2xl font-semibold text-primary">
+            EDUCATION & CERTIFICATIONS
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <!-- Education Column -->
+          <div class="space-y-6 edu-item">
+            <h4 class="font-body text-xl font-semibold text-primary border-b border-grey-light pb-2">
+              Education
+            </h4>
+            <div>
+              <div class="flex justify-between items-start flex-wrap gap-1">
+                <h5 class="font-body text-lg font-semibold text-primary">
+                  Telkom University Purwokerto
+                </h5>
+              </div>
+              <p class="pt-1 font-body text-base text-secondary font-medium">
+                Bachelor of Information Systems
+              </p>
+              <p class="pt-1 font-body font-light text-primary">
+                GPA: <strong>3.76 / 4.00</strong>
+              </p>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Developed the concept for the 2024 PKKMB event for the
-                Information Systems Study Program at Telkom University
-                Purwokerto.
-              </li>
-              <li class="font-body font-light text-primary">
-                Served as the MC for the 2024 PKKMB event for the Information
-                Systems Study Program at Telkom University Purwokerto.
-              </li>
-            </ul>
           </div>
 
-          <!-- TODAYS 2024 -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                TODAYS 2024
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September 2024
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Group Support Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Became a mentor for the PKKMB group at Telkom University
-                Purwokerto and helped organize 50 new students.
-              </li>
-            </ul>
-          </div>
+          <!-- Certifications Column -->
+          <div class="space-y-6 cert-item">
+            <h4 class="font-body text-xl font-semibold text-primary border-b border-grey-light pb-2">
+              Certifications
+            </h4>
+            <div class="space-y-4">
+              <div>
+                <h5 class="font-body text-lg font-semibold text-primary">
+                  Google AI Professional Certificate
+                </h5>
+                <p class="font-body text-sm font-medium text-secondary">Coursera</p>
+              </div>
 
-          <!-- Bakti Sosial Panti Asuhan -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Bakti Sosial Panti Asuhan
-              </h4>
-              <span class="font-body text-lg text-primary"> March 2024 </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Developed the concept for the HMSI Telkom Institute of
-                Technology Purwokerto Community Service event at the Harapan
-                Mulya Orphanage.
-              </li>
-              <li class="font-body font-light text-primary">
-                Served as the MC for the Community Service event at the Harapan
-                Mulya Orphanage.
-              </li>
-            </ul>
-          </div>
+              <div>
+                <h5 class="font-body text-lg font-semibold text-primary">
+                  Google Cybersecurity Professional Certificate
+                </h5>
+                <p class="font-body text-sm font-medium text-secondary">Coursera</p>
+              </div>
 
-          <!-- Closing Dies Natalis -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Closing Dies Natalis Jurusan Sistem Informasi 2023
-              </h4>
-              <span class="font-body text-lg text-primary">
-                December 2023
-              </span>
+              <div>
+                <h5 class="font-body text-lg font-semibold text-primary">
+                  BNSP Web Developer Certification
+                </h5>
+                <p class="font-body text-sm font-medium text-secondary">LSP Informatika</p>
+              </div>
             </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Developed the concept for the 2023 Information Systems
-                Anniversary event at the Telkom Institute of Technology
-                Purwokerto.
-              </li>
-              <li class="font-body font-light text-primary">
-                Served as the MC for the closing ceremony of the Information
-                Systems Department's Anniversary at the Telkom Institute of
-                Technology Purwokerto.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Malam Apresiasi Seni -->
-          <div class="org-item">
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Malam Apresiasi Seni
-              </h4>
-              <span class="font-body text-lg text-primary"> October 2023 </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Developed the theme and concept for the Arts Studio Night event
-                with the Student Executive Board of the Telkom Institute of
-                Technology Purwokerto
-              </li>
-              <li class="font-body font-light text-primary">
-                Developed the concept for Night's segments, the Fashion Show,
-                and served as the moderator for the segment.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Infection 4.0 -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Infection 4.0
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September 2023
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Staff
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Created the theme and concept for the faculty's PKKMB event,
-                INFECTION 4.0, with the Student Executive Board of the Faculty
-                of Informatics, Telkom Institute of Technology, Purwokerto.
-              </li>
-              <li class="font-body font-light text-primary">
-                Served as the host for the 2023 INFECTION 4.0 PKKMB event.
-              </li>
-            </ul>
-          </div>
-
-          <!-- Care For Maba -->
-          <div>
-            <div class="flex justify-between items-start flex-wrap">
-              <h4 class="font-body text-xl font-semibold text-primary">
-                Care For Maba
-              </h4>
-              <span class="font-body text-lg text-primary">
-                September 2023
-              </span>
-            </div>
-            <p class="pt-1 font-body text-lg font-medium text-primary">
-              • Event Division Coordinator
-            </p>
-            <ul class="pt-2 list-disc pl-10">
-              <li class="font-body font-light text-primary">
-                Developed the theme and concept for the PKKMB event for the
-                Information Systems study program with the Information Systems
-                Student Association of the Telkom Institute of Technology,
-                Purwokerto.
-              </li>
-              <li class="font-body font-light text-primary">
-                Coordinated the Care for New Students event division.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -849,17 +381,17 @@ import Footer from "../components/Footer.astro";
 </Layout>
 
 <script>
-  // Lazy load html2pdf library hanya saat dibutuhkan
-  function loadHtml2Pdf() {
+  // Lazy load html2pdf library only when needed
+  function loadHtml2Pdf(): Promise<any> {
     return new Promise((resolve, reject) => {
-      if (window.html2pdf) {
-        resolve(window.html2pdf);
+      if ((window as any).html2pdf) {
+        resolve((window as any).html2pdf);
         return;
       }
       const script = document.createElement("script");
       script.src =
         "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js";
-      script.onload = () => resolve(window.html2pdf);
+      script.onload = () => resolve((window as any).html2pdf);
       script.onerror = reject;
       document.head.appendChild(script);
     });
@@ -879,24 +411,19 @@ import Footer from "../components/Footer.astro";
       }
 
       try {
-        // Load library jika belum ada
         await loadHtml2Pdf();
 
-        // Detect if mobile device
         const isMobile = window.innerWidth <= 768;
 
-        // Hide button and footer before generating PDF
         if (button) button.style.display = "none";
         if (footer) footer.style.display = "none";
 
-        // Add PDF generating class to body for mobile-specific styles
         document.body.classList.add("generating-pdf");
         if (isMobile) {
           document.body.classList.add("mobile-pdf");
         }
 
-        // Different paper size for mobile vs desktop
-        const pdfFormat = isMobile ? [150, 297] : "a4"; // Mobile: custom narrow format (150mm x 297mm A4 height), Desktop: standard A4
+        const pdfFormat = isMobile ? [150, 297] : "a4";
 
         const opt = {
           margin: isMobile ? [0, 3, 3, 3] : [0, 5, 5, 5],
@@ -909,8 +436,8 @@ import Footer from "../components/Footer.astro";
             logging: false,
             scrollY: 0,
             scrollX: 0,
-            windowWidth: element.scrollWidth,
-            windowHeight: element.scrollHeight,
+            windowWidth: element ? element.scrollWidth : undefined,
+            windowHeight: element ? element.scrollHeight : undefined,
           },
           jsPDF: {
             unit: "mm",
@@ -920,29 +447,27 @@ import Footer from "../components/Footer.astro";
           },
           pagebreak: {
             mode: ["avoid-all", "css"],
-            avoid: [".project-item", ".org-item", "h1", "h2", "h3", "h4"],
+            avoid: [".project-item", ".exp-item", ".edu-item", ".cert-item", "h1", "h2", "h3", "h4"],
           },
         };
 
-        html2pdf()
+        (window as any)
+          .html2pdf()
           .set(opt)
           .from(element)
           .toPdf()
           .get("pdf")
-          .then((pdf) => {
+          .then((pdf: any) => {
             window.scrollTo(0, 0);
             return pdf;
           })
           .save()
           .then(() => {
-            // Remove PDF generating classes
             document.body.classList.remove("generating-pdf");
             document.body.classList.remove("mobile-pdf");
 
-            // Show button and footer again after PDF is generated
             if (button) {
               button.style.display = "block";
-              // Restore original icon
               button.innerHTML =
                 '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>';
             }
@@ -966,14 +491,16 @@ import Footer from "../components/Footer.astro";
 
   /* Mobile PDF specific optimizations */
   body.generating-pdf.mobile-pdf .project-item,
-  body.generating-pdf.mobile-pdf .org-item {
+  body.generating-pdf.mobile-pdf .exp-item,
+  body.generating-pdf.mobile-pdf .edu-item,
+  body.generating-pdf.mobile-pdf .cert-item {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
     margin-bottom: 1rem !important;
   }
 
   body.generating-pdf.mobile-pdf .project-list,
-  body.generating-pdf.mobile-pdf .org-list {
+  body.generating-pdf.mobile-pdf .exp-list {
     display: flex;
     flex-direction: column;
   }
@@ -1011,7 +538,7 @@ import Footer from "../components/Footer.astro";
   }
 
   body.generating-pdf.mobile-pdf .py-8,
-  body.generating-pdf.mobile-pdf .lg\:py-16 {
+  body.generating-pdf.mobile-pdf .lg\:py-12 {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
@@ -1050,13 +577,16 @@ import Footer from "../components/Footer.astro";
 
     .border-b,
     .project-section,
-    .org-section {
+    .exp-section,
+    .edu-cert-section {
       page-break-inside: avoid !important;
       break-inside: avoid-page !important;
     }
 
     .project-item,
-    .org-item {
+    .exp-item,
+    .edu-item,
+    .cert-item {
       page-break-inside: avoid !important;
       break-inside: avoid !important;
       display: block !important;

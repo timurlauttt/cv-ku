@@ -1,17 +1,19 @@
 # Urip Yoga Pangestu — CV & Portfolio
 
-> Personal CV and portfolio site of Urip Yoga Pangestu, an Information
-> Systems student at Telkom University Purwokerto and fullstack web
-> developer (Laravel, Django, React.js).
+> Personal CV and portfolio site of Urip Yoga Pangestu, Fullstack Software
+> Engineer specializing in modern PHP (Laravel 12/13), JavaScript (React.js),
+> and DevOps (Linux, Nginx, Podman, Cloudflare).
 
 ## Pages
 
 - [CV / Home](https://cv-uripyogapangestu.pangestudev.web.id/): Full CV —
-  education, certifications, technical skills, projects, and organizational
-  experience.
+  summary, technical skills, key engineering projects, professional experience,
+  education, and certifications.
 
 ## Contact
 
-- LinkedIn: https://www.linkedin.com/in/urip-yoga-pangestu-65a541231/
+- Website: https://pangestudev.web.id
+- LinkedIn: https://linkedin.com/in/uripyogapangestu
 - GitHub: https://github.com/timurlauttt
-- Email: 2211103102@ittelkom-pwt.ac.id
+- Email: hello@pangestudev.web.id
+- Phone / WhatsApp: (+62) 858-6146-6287
