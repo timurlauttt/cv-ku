@@ -6,9 +6,12 @@
 
 ## Pages
 
-- [CV / Home](https://cv-uripyogapangestu.pangestudev.web.id/): Full CV —
+- [CV / Home (EN)](https://cv-uripyogapangestu.pangestudev.web.id/): Full English CV —
   summary, technical skills, key engineering projects, professional experience,
   education, and certifications.
+- [CV Bahasa Indonesia (ID)](https://cv-uripyogapangestu.pangestudev.web.id/id): Full Indonesian CV —
+  ringkasan profesional, keahlian teknis, proyek teknik utama, pengalaman profesional,
+  pendidikan, dan sertifikasi.
 
 ## Contact
 

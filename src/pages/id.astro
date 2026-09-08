@@ -6,7 +6,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 
 <Layout
   title="CV - Urip Yoga Pangestu | Fullstack Software Engineer"
-  description="CV & Resume Urip Yoga Pangestu - Result-driven Fullstack Software Engineer with expertise in Laravel 12/13, React.js, Tailwind CSS, DevOps (Linux, Nginx, Podman, Cloudflare), and AI API integration."
+  description="CV & Resume Urip Yoga Pangestu - Fullstack Software Engineer berorientasi hasil dengan keahlian dalam Laravel 12/13, React.js, Tailwind CSS, DevOps (Linux, Nginx, Podman, Cloudflare), dan integrasi API AI."
 >
   <main id="main" class="relative">
     <!-- Top Bar with Language Switcher -->
@@ -14,13 +14,15 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
       <span class="text-xs text-grey font-medium tracking-wider uppercase">
         Curriculum Vitae
       </span>
-      <LanguageSwitcher currentLang="en" />
+      <LanguageSwitcher currentLang="id" />
     </div>
+
     <!-- Download PDF Button -->
     <button
       id="download-pdf"
       class="fixed bottom-8 right-8 z-50 bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-green transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
-      aria-label="Download CV as PDF"
+      aria-label="Unduh CV sebagai PDF"
+      title="Unduh CV sebagai PDF"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -109,51 +111,51 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
                 rel="noopener noreferrer"
                 class="hover:text-secondary transition-colors"
               >
-                <span class="font-bold">phone</span> : (+62) 858-6146-6287
+                <span class="font-bold">telepon</span> : (+62) 858-6146-6287
               </a>
             </li>
             <li>
-              <span class="font-bold">location</span> : Purwokerto, Indonesia
+              <span class="font-bold">lokasi</span> : Purwokerto, Indonesia
             </li>
           </ul>
         </div>
 
         <div class="pt-6">
           <h2 class="font-body text-2xl font-semibold text-primary">
-            PROFESSIONAL SUMMARY
+            RINGKASAN PROFESIONAL
           </h2>
           <p
             class="pt-4 font-body text-base lg:text-lg font-light text-primary text-justify leading-relaxed"
           >
-            Result-driven Fullstack Software Engineer with a proven track record of architecting, deploying, and maintaining high-performance web applications and institutional systems. Deep expertise in modern PHP (Laravel 12/13) and JavaScript (React.js) ecosystems, combined with robust DevOps capabilities in Linux, Nginx, and Podman environments. Demonstrated success in integrating third-party APIs (Midtrans, Google Gemini AI) and optimizing cloud infrastructure (Cloudflare ecosystem) to deliver secure, scalable, and automated digital solutions.
+            Fullstack Software Engineer yang berorientasi pada hasil dengan rekam jejak terbukti dalam merancang, men-deploy, dan memelihara aplikasi web berkinerja tinggi serta sistem institusional. Memiliki keahlian mendalam dalam ekosistem PHP modern (Laravel 12/13) dan JavaScript (React.js), dipadukan dengan kapabilitas DevOps yang solid di lingkungan Linux, Nginx, dan Podman. Berpengalaman dalam mengintegrasikan API pihak ketiga (Midtrans, Google Gemini AI) dan mengoptimalkan infrastruktur cloud (ekosistem Cloudflare) guna menghadirkan solusi digital yang aman, skalabel, dan terotomatisasi.
           </p>
         </div>
       </div>
 
-      <!-- TECHNICAL SKILLS -->
+      <!-- KEAHLIAN TEKNIS -->
       <div class="border-b border-black py-8 lg:py-12 skill-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            TECHNICAL SKILLS
+            KEAHLIAN TEKNIS
           </h3>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Languages -->
+          <!-- Bahasa Pemrograman -->
           <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
             <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
-              Languages
+              Bahasa Pemrograman
             </h4>
             <p class="font-body font-light text-primary text-base">
               PHP 8.2, JavaScript (ES6+), Python, HTML5, CSS3.
             </p>
           </div>
 
-          <!-- Frameworks & Libraries -->
+          <!-- Framework & Library -->
           <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
             <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
-              Frameworks & Libraries
+              Framework & Library
             </h4>
             <p class="font-body font-light text-primary text-base">
               Laravel (v12, v13), React.js, Tailwind CSS (v4), Django, Bootstrap, Alpine.js, Blade.
@@ -171,11 +173,11 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
             </p>
           </div>
 
-          <!-- Database & Integrations -->
+          <!-- Database & Integrasi -->
           <div class="border border-grey-light p-4 rounded-lg bg-grey-lightest/40">
             <h4 class="font-body text-lg font-semibold text-primary pb-2 flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
-              Database & Integrations
+              Database & Integrasi
             </h4>
             <p class="font-body font-light text-primary text-base">
               MySQL, Midtrans API, Google Gemini 2.5 Flash, RESTful API, Spatie Permission.
@@ -184,13 +186,13 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
         </div>
       </div>
 
-      <!-- KEY ENGINEERING PROJECTS -->
+      <!-- PROYEK TEKNIK UTAMA -->
       <div
         class="border-b border-black py-8 lg:py-12 text-justify project-section"
       >
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            KEY ENGINEERING PROJECTS
+            PROYEK TEKNIK UTAMA
           </h3>
         </div>
         <div class="space-y-8 project-list">
@@ -198,7 +200,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
           <div class="project-item">
             <div class="flex justify-between items-baseline flex-wrap gap-2">
               <h4 class="font-body text-xl font-semibold text-primary">
-                HIT E-Tracer — Institutional Partnership Management System
+                HIT E-Tracer — Sistem Manajemen Kemitraan Institusi
               </h4>
               <span class="font-body text-sm md:text-base font-medium text-secondary">
                 Laravel 13, React.js, MySQL, Cloudflare R2
@@ -206,13 +208,13 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
             </div>
             <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Engineered an end-to-end platform to automate institutional partnership submissions (MoU, MoA, IA) at Telkom University Purwokerto, featuring a hybrid dynamic form engine.
+                Merancang dan membangun platform end-to-end untuk mengotomatisasi pengajuan kemitraan institusi (MoU, MoA, IA) di Telkom University Purwokerto, dengan dynamic form engine bertipe hybrid.
               </li>
               <li class="font-body font-light text-primary">
-                Integrated Google Gemini 2.5 Flash AI for smart document parsing and validation assistance to accelerate verification workflows.
+                Mengintegrasikan Google Gemini 2.5 Flash AI untuk parsing dokumen cerdas dan asistensi validasi guna mempercepat alur kerja verifikasi.
               </li>
               <li class="font-body font-light text-primary">
-                Developed automated SLA turnaround monitoring with visual tracking, alongside scheduled email and web notifications for pending reviews and renewals.
+                Mengembangkan sistem pemantauan turnaround SLA otomatis dengan pelacakan visual, dilengkapi notifikasi email dan web terjadwal untuk peninjauan dan perpanjangan dokumen.
               </li>
             </ul>
           </div>
@@ -221,7 +223,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
           <div class="project-item">
             <div class="flex justify-between items-baseline flex-wrap gap-2">
               <h4 class="font-body text-xl font-semibold text-primary">
-                MIN 2 Banyumas — Integrated School Portal & Online Admission
+                MIN 2 Banyumas — Portal Terintegrasi & Penerimaan Peserta Didik Baru Online
               </h4>
               <span class="font-body text-sm md:text-base font-medium text-secondary">
                 Laravel 12, Tailwind CSS v4, Midtrans API
@@ -229,13 +231,13 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
             </div>
             <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Developed a production-ready school information system featuring an end-to-end online student admission (PPDB) pipeline with automated registration codes and document validation.
+                Mengembangkan sistem informasi madrasah siap produksi dengan alur PPDB online end-to-end yang dilengkapi kode registrasi otomatis dan validasi dokumen.
               </li>
               <li class="font-body font-light text-primary">
-                Implemented seamless payment processing via Midtrans API integration (Snap Token & automated webhook verification).
+                Mengimplementasikan sistem pembayaran terintegrasi via Midtrans API (Snap Token & verifikasi webhook otomatis).
               </li>
               <li class="font-body font-light text-primary">
-                Built a NISN-based online graduation announcement module that dynamically generates verifiable SKL documents with QR codes.
+                Membangun modul pengumuman kelulusan online berbasis NISN yang secara dinamis menerbitkan dokumen SKL terverifikasi dengan kode QR.
               </li>
             </ul>
           </div>
@@ -244,7 +246,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
           <div class="project-item">
             <div class="flex justify-between items-baseline flex-wrap gap-2">
               <h4 class="font-body text-xl font-semibold text-primary">
-                Pancacinta — School Mini LMS & Student Activity Tracker
+                Pancacinta — Mini LMS & Pelacak Aktivitas Siswa
               </h4>
               <span class="font-body text-sm md:text-base font-medium text-secondary">
                 Laravel 13, Alpine.js, PWA, WebPush API
@@ -252,22 +254,22 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
             </div>
             <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Architected a multi-role hierarchical LMS for Superadmin, Admin, Teachers, Students, and Parents, equipped with Spatie Permission access control.
+                Merancang LMS hierarkis multi-peran untuk Superadmin, Admin, Guru, Siswa, dan Orang Tua, dengan kontrol akses Spatie Permission.
               </li>
               <li class="font-body font-light text-primary">
-                Engineered a secure online examination engine featuring server-side time verification, per-question auto-save, and instant automated grade calculations.
+                Membangun modul ujian online aman dengan verifikasi waktu di sisi server, auto-save per pertanyaan, dan perhitungan nilai otomatis secara instan.
               </li>
               <li class="font-body font-light text-primary">
-                Deployed as an installable Progressive Web App (PWA) with offline fallbacks, scheduled push reminders, and integrated Cloudflare R2 storage featuring on-the-fly WebP image compression.
+                Men-deploy sebagai Progressive Web App (PWA) yang dapat diinstal dengan fallback offline, notifikasi pengingat terjadwal, dan penyimpanan terintegrasi Cloudflare R2 dengan kompresi gambar WebP on-the-fly.
               </li>
             </ul>
           </div>
 
-          <!-- Photobooth Web Application -->
+          <!-- Aplikasi Web Photobooth -->
           <div class="project-item">
             <div class="flex justify-between items-baseline flex-wrap gap-2">
               <h4 class="font-body text-xl font-semibold text-primary">
-                Photobooth Web Application
+                Aplikasi Web Photobooth
               </h4>
               <span class="font-body text-sm md:text-base font-medium text-secondary">
                 React.js, Tailwind, Vercel
@@ -275,21 +277,21 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
             </div>
             <ul class="pt-2 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Created a responsive, browser-based photo booth application enabling seamless real-time webcam streaming and automated multi-shot capture.
+                Membuat aplikasi photo booth berbasis peramban (browser) responsif dengan streaming webcam real-time dan pengambilan multi-shot otomatis.
               </li>
               <li class="font-body font-light text-primary">
-                Implemented live canvas rendering for aesthetic photo strip layouts, supporting instant interactive adjustments and one-click high-resolution downloads.
+                Mengimplementasikan rendering canvas langsung untuk layout photo strip estetis, mendukung kustomisasi interaktif instan dan unduhan resolusi tinggi dalam satu klik.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- PROFESSIONAL EXPERIENCE -->
+      <!-- PENGALAMAN PROFESIONAL -->
       <div class="border-b border-black py-8 lg:py-12 text-justify exp-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            PROFESSIONAL EXPERIENCE
+            PENGALAMAN PROFESIONAL
           </h3>
         </div>
         <div class="space-y-8 exp-list">
@@ -305,37 +307,37 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
                   lowcosthost.id
                 </a>
                 <p class="pt-1 font-body text-lg font-medium text-secondary">
-                  Infrastructure Engineer & Technical Team
+                  Infrastructure Engineer & Tim Teknis
                 </p>
               </div>
               <span class="font-body text-base text-primary font-medium">
-                Jan 2026 – Present
+                Jan 2026 – Sekarang
               </span>
             </div>
             <ul class="pt-3 list-disc pl-5 space-y-1.5">
               <li class="font-body font-light text-primary">
-                Executed ongoing maintenance and advanced VPS/Linux server optimization via Nginx across 15+ production websites, ensuring system stability to handle high-traffic concurrency.
+                Menjalankan pemeliharaan berkelanjutan dan optimasi server VPS/Linux tingkat lanjut melalui Nginx pada 15+ website produksi, memastikan stabilitas sistem dalam menangani konkurensi lalu lintas tinggi.
               </li>
               <li class="font-body font-light text-primary">
-                Managed seamless web deployments and database architectures leveraging CI/CD pipelines through GitHub Actions.
+                Mengelola deployment web dan arsitektur database secara seamless memanfaatkan CI/CD pipeline melalui GitHub Actions.
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- EDUCATION & CERTIFICATIONS -->
+      <!-- PENDIDIKAN & SERTIFIKASI -->
       <div class="border-b border-black py-8 lg:py-12 edu-cert-section">
         <div class="flex items-center pb-6">
           <h3 class="font-body text-2xl font-semibold text-primary">
-            EDUCATION & CERTIFICATIONS
+            PENDIDIKAN & SERTIFIKASI
           </h3>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <!-- Education Column -->
+          <!-- Kolom Pendidikan -->
           <div class="space-y-6 edu-item">
             <h4 class="font-body text-xl font-semibold text-primary border-b border-grey-light pb-2">
-              Education
+              Pendidikan
             </h4>
             <div>
               <div class="flex justify-between items-start flex-wrap gap-1">
@@ -344,18 +346,18 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
                 </h5>
               </div>
               <p class="pt-1 font-body text-base text-secondary font-medium">
-                Bachelor of Information Systems
+                S1 Sistem Informasi (Bachelor of Information Systems)
               </p>
               <p class="pt-1 font-body font-light text-primary">
-                GPA: <strong>3.76 / 4.00</strong>
+                IPK: <strong>3.76 / 4.00</strong>
               </p>
             </div>
           </div>
 
-          <!-- Certifications Column -->
+          <!-- Kolom Sertifikasi -->
           <div class="space-y-6 cert-item">
             <h4 class="font-body text-xl font-semibold text-primary border-b border-grey-light pb-2">
-              Certifications
+              Sertifikasi
             </h4>
             <div class="space-y-4">
               <div>
@@ -374,7 +376,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 
               <div>
                 <h5 class="font-body text-lg font-semibold text-primary">
-                  BNSP Web Developer Certification
+                  Sertifikasi Pengembang Web BNSP
                 </h5>
                 <p class="font-body text-sm font-medium text-secondary">LSP Informatika</p>
               </div>
@@ -435,7 +437,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
 
         const opt = {
           margin: isMobile ? [0, 3, 3, 3] : [0, 5, 5, 5],
-          filename: "CV_Urip_Yoga_Pangestu.pdf",
+          filename: "CV_Urip_Yoga_Pangestu_ID.pdf",
           image: { type: "jpeg", quality: 0.95 },
           html2canvas: {
             scale: isMobile ? 2.8 : 1.8,
@@ -487,7 +489,7 @@ import LanguageSwitcher from "../components/LanguageSwitcher.astro";
           button.innerHTML =
             '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>';
         }
-        alert("Failed to generate PDF. Please try again.");
+        alert("Gagal mengunduh PDF. Silakan coba lagi.");
       }
     });
 </script>

@@ -1,0 +1,38 @@
+---
+interface Props {
+  currentLang: "en" | "id";
+}
+
+const { currentLang } = Astro.props;
+---
+
+<div
+  class="inline-flex items-center bg-grey-lightest border border-grey-light rounded-full p-0.5 shadow-sm text-xs font-semibold"
+  role="navigation"
+  aria-label="Language selector"
+>
+  <a
+    href="/"
+    class={`px-3 py-1 rounded-full transition-all duration-200 ${
+      currentLang === "en"
+        ? "bg-primary text-white shadow-sm"
+        : "text-primary hover:text-secondary"
+    }`}
+    aria-current={currentLang === "en" ? "page" : undefined}
+    aria-label="English version"
+  >
+    EN
+  </a>
+  <a
+    href="/id"
+    class={`px-3 py-1 rounded-full transition-all duration-200 ${
+      currentLang === "id"
+        ? "bg-primary text-white shadow-sm"
+        : "text-primary hover:text-secondary"
+    }`}
+    aria-current={currentLang === "id" ? "page" : undefined}
+    aria-label="Versi Bahasa Indonesia"
+  >
+    ID
+  </a>
+</div>
